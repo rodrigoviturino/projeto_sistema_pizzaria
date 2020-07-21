@@ -104,27 +104,7 @@
                   <p class="card-text font-weight-bold text-danger">
                     R$ 00,00
                   </p>
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPizza">Comprar Pizza</button>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="col-sm-3">
-              <div class="card text-center">
-                <img
-                  class="card-img-top"
-                  src="./img_pizzas/pizza10.webp"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Nome Produto</h5>
-                  <p class="card-text">
-                    Resumo Produto
-                  </p>
-                  <p class="card-text font-weight-bold text-danger">
-                    R$ 00,00
-                  </p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary" data-target="#modalPizza">Comprar Pizza</a>
                 </div>
               </div>
             </div>
@@ -144,7 +124,7 @@
                   <p class="card-text font-weight-bold text-danger">
                     R$ 00,00
                   </p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary" data-target="#modalPizza">Comprar Pizza</a>
                 </div>
               </div>
             </div>
@@ -164,91 +144,11 @@
                   <p class="card-text font-weight-bold text-danger">
                     R$ 00,00
                   </p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary"  data-target="#modalPizza">Comprar Pizza</a>
                 </div>
               </div>
             </div>
-
-            <div class="col-sm-3">
-              <div class="card text-center">
-                <img
-                  class="card-img-top"
-                  src="./img_pizzas/pizza10.webp"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Nome Produto</h5>
-                  <p class="card-text">
-                    Resumo Produto
-                  </p>
-                  <p class="card-text font-weight-bold text-danger">
-                    R$ 00,00
-                  </p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-3">
-              <div class="card text-center">
-                <img
-                  class="card-img-top"
-                  src="./img_pizzas/pizza10.webp"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Nome Produto</h5>
-                  <p class="card-text">
-                    Resumo Produto
-                  </p>
-                  <p class="card-text font-weight-bold text-danger">
-                    R$ 00,00
-                  </p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-3">
-              <div class="card text-center">
-                <img
-                  class="card-img-top"
-                  src="./img_pizzas/pizza10.webp"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Nome Produto</h5>
-                  <p class="card-text">
-                    Resumo Produto
-                  </p>
-                  <p class="card-text font-weight-bold text-danger">
-                    R$ 00,00
-                  </p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-3">
-              <div class="card text-center">
-                <img
-                  class="card-img-top"
-                  src="./img_pizzas/pizza10.webp"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Nome Produto</h5>
-                  <p class="card-text">
-                    Resumo Produto
-                  </p>
-                  <p class="card-text font-weight-bold text-danger">
-                    R$ 00,00
-                  </p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-            </div> -->
-
+            
           </div>
         </div>
       </div>
@@ -333,13 +233,13 @@
                       <!-- Tamanho Pizza -->
                       <div class="btn-group btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-outline-primary active">
-                          <input type="radio" name="options" id="option1" autocomplete="off" checked> Pequena
+                          <input type="radio" name="options" id="option1" data-tamanho="1" autocomplete="off" checked> Pequena
                         </label>
                         <label class="btn btn-outline-primary">
-                          <input type="radio" name="options" id="option2" autocomplete="off"> Média
+                          <input type="radio" name="options" id="option2" data-tamanho="2" autocomplete="off"> Média
                         </label>
                         <label class="btn btn-outline-primary">
-                          <input type="radio" name="options" id="option3" autocomplete="off"> Grande
+                          <input type="radio" name="options" id="option3" data-tamanho="3" autocomplete="off"> Grande
                         </label>
                       </div>
                       <!-- end Tamanho Pizza -->
@@ -408,7 +308,7 @@
         </div>
       </div>
     <!-- end Modal Pizza -->
-<button id="teste">Ativar</button>
+
     <!-- Scripts -->
     <script src="./jquery-3.5.1.min.js"></script>
     <script src="./bootstrap-4.5.0/dist/js/bootstrap.min.js"></script>
