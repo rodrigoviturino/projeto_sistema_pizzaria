@@ -1,0 +1,113 @@
+.home-intro {
+  background-image: url("./assets/images/background-intro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .block-title {
+    background-image: url("/assets/images/vintage-burst2-light.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 2;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.452);
+      position: absolute;
+      z-index: -1;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-style: italic;
+    }
+    img {
+      padding: 1rem 0;
+    }
+  }
+}
+
+.home-cards {
+  padding: 100px 0;
+
+  .card {
+    transition: all 0.5s;
+    border: solid 0.5px #f2f2f2;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-bottom: map-get($spacers, 5);
+    &:hover {
+      transform: translateY(-5px);
+      outline: none;
+      box-shadow: 0 8px 14px rgba(47, 85, 212, 0.2);
+    }
+  }
+}
+
+// Modal Pizza
+#modalPizza {
+  [data-quantidade] {
+    align-items: center;
+    font-size: 1.5rem;
+
+    button {
+      color: #fff;
+      background-color: $blue;
+      width: 30px;
+    }
+    span {
+      padding: 0 map-get($spacers, 2);
+    }
+  }
+}
+
+/* Panel Pedido */
+.panel-pedido {
+  display: none;
+  position: absolute;
+  right: -500px;
+  top: 600px;
+  bottom: 0;
+  transition: all 0.5s;
+  transform: translateX(-10px);
+}
+.active {
+  right: 0 !important;
+  display: block !important;
+  animation: tes 0.5s forwards;
+}
+
+@keyframes tes {
+  from {
+    opacity: 0;
+    transform: translate3d(-60px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* end Panel Pedido */
